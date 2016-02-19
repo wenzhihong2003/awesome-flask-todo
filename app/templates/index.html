@@ -5,6 +5,22 @@
   <title>index</title>
 </head>
 <body>
-{{text}}
+<table class="table">
+  <thead>
+  <tr>
+    <td>Content</td>
+    <td>Time</td>
+    <td>status</td>
+  </tr>
+  </thead>
+  {% for t in todos %}
+    <tr>
+      <td>{{ t.content }}</td>
+      <td>{{ t.time }}</td>
+      <td>{{ t.status }}</td>
+    </tr>
+  {% endfor %}
+
+</table>
 </body>
 </html>
