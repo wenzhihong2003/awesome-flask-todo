@@ -11,7 +11,7 @@ manager.add_command("runserver", Server(host='0.0.0.0', port=5000, use_debugger=
 
 @manager.command
 def save_todo():
-    todo = Todo(content='my second todo')
+    todo = Todo(content='my 5 todo')
     todo.save()
 
 if __name__ == '__main__':

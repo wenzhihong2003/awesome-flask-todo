@@ -1,7 +1,7 @@
 # coding=utf-8
 from __future__ import (unicode_literals, absolute_import)
 from flask import Flask
-from flask_mongoengine import MongoEngine
+from flask.ext.mongoengine import MongoEngine
 
 app = Flask(__name__)
 app.config.from_object('config')
